@@ -1,0 +1,22 @@
+# Keep the build context small and the image clean.
+.git
+.gitignore
+.venv
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# Local dev / docs that don't belong in the runtime image.
+*.ipynb
+*.png
+endtoendflow.md
+compressed.md
+Todo.md
+
+# IaC & CI are not needed inside the app image.
+infra/
+.github/
+
+# Regenerable FAISS index dirs (rebuilt on first boot). Keep the OCR text
+# sidecar (.rag_cache/text_*.json) so OCR never re-runs -- it is NOT ignored.
+.rag_cache/*/
