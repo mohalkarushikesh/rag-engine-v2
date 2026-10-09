@@ -299,4 +299,4 @@ new file.
 
 ## DashBoard
 
-![DashBoard](/DashBoard.png)
+![DashBoard](/assets/dashboard.png)
