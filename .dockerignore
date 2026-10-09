@@ -12,6 +12,7 @@ __pycache__/
 endtoendflow.md
 compressed.md
 Todo.md
+Notes.md
 
 # IaC & CI are not needed inside the app image.
 infra/
