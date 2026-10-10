@@ -10,5 +10,4 @@ and Amazon EC2 directly from Python scripts.
 
 - Ingest documents — **Load, clean, and split source documents into chunks.**
 
-- Sentence Transformers enables the transformation of sentences into vector spaces. They represent sentences as dense vector embeddings that can be used in a variety of applications such as semantic search, clustering, and information retrieval more efficiently than traditional methods.
-- Sentence Transformer is a model that generates fixed-length vector representations (embeddings) for sentences or longer pieces of text, unlike traditional models that focus on word-level embeddings. These representations are particularly useful in tasks where understanding the context or meaning of an entire sentence is required.
+- Sentence Transformer is a model that **generates fixed-length vector representations (embeddings) for sentences or longer pieces of text**, unlike traditional models that focus on word-level embeddings. These representations are particularly useful in tasks where understanding the context or meaning of an entire sentence is required.
