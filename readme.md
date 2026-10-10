@@ -169,12 +169,12 @@ models. Everything needed to deploy lives in this repo: a `Dockerfile`, Terrafor
 
 ```
           build (CI / laptop w/ internet)                 runtime (AWS)
-  ┌─────────────────────────────────────┐        ┌──────────────────────────────┐
+  ┌─────────────────────────────────────┐         ┌──────────────────────────────┐
   │ docker build                         │        │ AWS App Runner (HTTPS, auto- │
   │  • pip install deps                  │  push  │ scaling, managed TLS)        │
   │  • bake HF models (offline weights)  │ ─────► │   gunicorn → Flask app       │
   │  → image in Amazon ECR               │        │   instance IAM role          │
-  └─────────────────────────────────────┘        │        │  bedrock:InvokeModel │
+  └─────────────────────────────────────┘         │        │  bedrock:InvokeModel│
                                                   │        ▼                     │
                                                   │   Amazon Bedrock             │
                                                   │   (Titan embed + Claude LLM) │
